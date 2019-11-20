@@ -48,6 +48,7 @@ Vehicle::Vehicle(physics::ModelPtr &_model,
     sub_res_          = nh->subscribe("/fssim/res_state", 1, &Vehicle::onRes, this);
     sub_cmd_          = nh->subscribe("/fssim/cmd", 1, &Vehicle::onCmd, this);
     sub_initial_pose_ = nh->subscribe("/initialpose", 1, &Vehicle::onInitialPose, this);
+    // TODO: Subscribe to friction value @ current location
 
     // Initializatoin
     initModel(_sdf);
@@ -113,6 +114,10 @@ void Vehicle::update(const double dt) {
     input_.dc = car_info_.torque_ok && ros::Time::now().toSec() - time_last_cmd_ < 1.0 ? input_.dc : -1.0;
 
     double Fz = getNormalForce(state_);
+
+    // TODO set new tire params dyn reconf
+    //     front_axle_.setParam(param_);
+    //     rear_axle_.setParam(param_);
 
     // Tire Forces
     AxleTires FyF{}, FyR{}, alphaF{}, alphaR{};

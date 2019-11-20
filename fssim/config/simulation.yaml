@@ -23,7 +23,7 @@
 
 simulation_name: "FSSIM 1.0"
 
-robot_name: gotthard  # Name of the robot [string]
+robot_name: snowfox  # Name of the robot [string] tmp set also in "auto_fssim_saarti.launch"
 kill_after: 6000      # After this time, repetition is stopped [s]
 
 pkg_config_storage: fssim_description # If relative path is given in following config files, the path will be taken
@@ -35,7 +35,7 @@ repetitions:
 # Checks which must be true in order to automatically press RES GO
 res:
   checks:
-    is_in_track: true
+    is_in_track: false
 
 # Launch files for autonomous missions
 launch_file:
@@ -49,3 +49,7 @@ launch_file:
 # thin.sdf 
 # skidpad.sdf 
 # acceleration.sdf 
+
+# Custom saarti tracks
+# track_test.sdf
+# simple_oval.sdf
