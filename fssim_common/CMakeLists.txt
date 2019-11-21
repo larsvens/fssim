@@ -41,6 +41,7 @@ add_message_files(FILES
         Mission.msg
         Track.msg
         State.msg
+	TireParams.msg
         )
 
 generate_messages(DEPENDENCIES std_msgs geometry_msgs)

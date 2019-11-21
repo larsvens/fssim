@@ -48,7 +48,7 @@ Vehicle::Vehicle(physics::ModelPtr &_model,
     sub_res_          = nh->subscribe("/fssim/res_state", 1, &Vehicle::onRes, this);
     sub_cmd_          = nh->subscribe("/fssim/cmd", 1, &Vehicle::onCmd, this);
     sub_initial_pose_ = nh->subscribe("/initialpose", 1, &Vehicle::onInitialPose, this);
-    // TODO: Subscribe to friction value @ current location
+    sub_tire_params_  = nh->subscribe("/tire_params", 1, &Vehicle::onTireParams, this);
 
     // Initializatoin
     initModel(_sdf);
@@ -115,9 +115,9 @@ void Vehicle::update(const double dt) {
 
     double Fz = getNormalForce(state_);
 
-    // TODO set new tire params dyn reconf
-    //     front_axle_.setParam(param_);
-    //     rear_axle_.setParam(param_);
+    // set new tire params
+    front_axle_.setParam(param_);
+    rear_axle_.setParam(param_);
 
     // Tire Forces
     AxleTires FyF{}, FyR{}, alphaF{}, alphaR{};
@@ -233,6 +233,8 @@ void Vehicle::publishTf(const State &x) {
 double Vehicle::getFx(const State &x, const Input &u) {
     const double dc = x.v_x <= 0.0 && u.dc < 0.0 ? 0.0 : u.dc;
     const double Fx = dc * param_.driveTrain.cm1 - aero_.getFdrag(x) - param_.driveTrain.cr0;
+    // Todo saturate Fx based on magic formula params?
+
     return Fx;
 }
 
@@ -258,6 +260,15 @@ void Vehicle::onInitialPose(const geometry_msgs::PoseWithCovarianceStamped &msg)
     state_.y   = msg.pose.pose.position.y;
     state_.yaw = tf::getYaw(msg.pose.pose.orientation);
     state_.v_x = state_.v_y = state_.r = state_.a_x = state_.a_y = 0.0;
+}
+
+void Vehicle::onTireParams(const fssim_common::TireParamsConstPtr &msg) {
+    std::cout << "in tire params callback" << std::endl;
+    param_.tire.tire_coefficient = msg->tire_coefficient;
+    param_.tire.B = msg->B;
+    param_.tire.C = msg->C;
+    param_.tire.D = msg->D;
+    param_.tire.E = msg->E;
 }
 
 double Vehicle::getNormalForce(const State &x) {

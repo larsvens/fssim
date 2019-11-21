@@ -37,6 +37,7 @@
 #include "fssim_common/ResState.h"
 #include "fssim_common/Mission.h"
 #include "fssim_common/State.h"
+#include "fssim_common/TireParams.h"
 #include "nav_msgs/Odometry.h"
 #include "geometry_msgs/PoseWithCovarianceStamped.h"
 
@@ -102,6 +103,8 @@ class Vehicle {
 
     void onInitialPose(const geometry_msgs::PoseWithCovarianceStamped &msg);
 
+    void onTireParams(const fssim_common::TireParamsConstPtr &msg);
+
     void initModel(sdf::ElementPtr &_sdf);
 
     void initVehicleParam(sdf::ElementPtr &_sdf);
@@ -129,6 +132,7 @@ class Vehicle {
     ros::Subscriber sub_cmd_;
     ros::Subscriber sub_initial_pose_;
     ros::Subscriber sub_res_;
+    ros::Subscriber sub_tire_params_;
 
     // ROS TF
     tf::TransformBroadcaster tf_br_;
