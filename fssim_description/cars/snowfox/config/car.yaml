@@ -32,22 +32,22 @@ car:
     l: 4.9           # Vehicle Length [m] (wheelbase 2.984) 
     b_F: 1.1936      # From COG to front axle [m] (assuming 60-40 fwd weight dist)
     b_R: 1.7904      # From COG to rear axle [m]
-    w_front: 0.4     # Percentage of weight front
+    w_front: 0.6     # Percentage of weight front
     h_cg: 0.75       # Heights of COG [m] (estimate)
 
     # l_F = l * (1 - w_front);  # Front cg lever arm [m]
     # l_R = l * w_front;  # Rear  cg lever arm [m]
 
   # Magic Formula:
-  # y=D*sin(C*atan(B*(1-E)*x+E*atan(B*x)))
+  # y=D*sin(C*atan(B*(1-E)*x+E*atan(B*x))) equivalent to rajamani
+  # y=D*sin(C*atan(B*x-E*(B*x-atan(B*x))))
   tire:
     tire_coefficient: 1.0
-    B: 10.0
+    B: 10.0 
     C: 1.9
-    D: 1.0
+    D: -1.5 # flip sign to account for differnt coordinate system in fssim
     E: 0.97
     # default coeffs for dry asphalt
-    # todo dynamic reconfigure
 
   aero:
     C_Down: # F_Downforce = C_Downforce*v_x^2; C_Downforce = a*b*c

@@ -126,7 +126,19 @@ void Vehicle::update(const double dt) {
     front_axle_.setSteering(input_.delta);
 
     // Drivetrain Model
-    const double Fx   = getFx(state_, input_);
+    double Fx   = getFx(state_, input_);
+    // saturate Fx based on D, Fy and friction circle
+    double Ffmax = param_.tire.D*Fz*param_.kinematic.w_front;
+    double Frmax = param_.tire.D*Fz*(1-param_.kinematic.w_front);    
+    double Fxfmax = std::sqrt(Ffmax*Ffmax-(FyF.left+FyF.right)*(FyF.left+FyF.right));
+    double Fxrmax = std::sqrt(Ffmax*Ffmax-(FyR.left+FyR.right)*(FyR.left+FyR.right));
+    if(Fx >= Fxfmax + Fxrmax){
+        Fx = Fxfmax + Fxrmax;
+    }
+    if(Fx <= -(Fxfmax + Fxrmax)){
+        Fx = -(Fxfmax + Fxrmax);
+    }	
+
     const double M_Tv = getMTv(state_, input_);
 
     // Dynamics
@@ -233,8 +245,6 @@ void Vehicle::publishTf(const State &x) {
 double Vehicle::getFx(const State &x, const Input &u) {
     const double dc = x.v_x <= 0.0 && u.dc < 0.0 ? 0.0 : u.dc;
     const double Fx = dc * param_.driveTrain.cm1 - aero_.getFdrag(x) - param_.driveTrain.cr0;
-    // Todo saturate Fx based on magic formula params?
-
     return Fx;
 }
 
