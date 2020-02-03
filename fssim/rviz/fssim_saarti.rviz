@@ -423,13 +423,13 @@ Visualization Manager:
       Unreliable: false
       Value: true
     - Class: rviz/Marker
-      Enabled: true
+      Enabled: false
       Marker Topic: /trajset_vis
       Name: trajset
       Namespaces:
         {}
       Queue Size: 100
-      Value: true
+      Value: false
     - Class: rviz/Marker
       Enabled: false
       Marker Topic: /lhpt_vis
@@ -451,7 +451,7 @@ Visualization Manager:
       Marker Topic: /state_text_marker
       Name: state_text
       Namespaces:
-        {}
+        "": true
       Queue Size: 100
       Value: true
   Enabled: true
@@ -479,7 +479,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 48.9180794
+      Distance: 37.8821602
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -494,10 +494,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.38479811
+      Pitch: 0.374798119
       Target Frame: fssim/vehicle/base_link
       Value: ThirdPersonFollower (rviz)
-      Yaw: 3.13542843
+      Yaw: 3.13042879
     Saved: ~
 Window Geometry:
   Displays:

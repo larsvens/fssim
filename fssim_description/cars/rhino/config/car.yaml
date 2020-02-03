@@ -34,6 +34,7 @@ car:
     b_R: 2.188       # From COG to rear axle [m]
     w_front: 0.644   # Percentage of weight front
     h_cg: 1.0        # Heights of COG [m] (estimate)
+    l_width: 2.6     # Width of the vehicle body
 
     # l_F = l * (1 - w_front);  # Front cg lever arm [m]
     # l_R = l * w_front;  # Rear  cg lever arm [m]
@@ -47,7 +48,7 @@ car:
     C: 1.9
     D: -1.0 # flip sign to account for differnt coordinate system in fssim
     E: 0.97
-    # default coeffs for dry asphalt
+    # default coeffs for dry asphalt, updated online
 
   aero:
     C_Down: # F_Downforce = C_Downforce*v_x^2; C_Downforce = a*b*c
