@@ -3,10 +3,9 @@ Panels:
     Help Height: 93
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /trajstar_poly1
+      Expanded: ~
       Splitter Ratio: 0.663888872
-    Tree Height: 639
+    Tree Height: 1692
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -35,7 +34,7 @@ Visualization Manager:
       Cell Size: 3
       Class: rviz/Grid
       Color: 177; 177; 177
-      Enabled: true
+      Enabled: false
       Line Style:
         Line Width: 0.0299999993
         Value: Lines
@@ -48,7 +47,7 @@ Visualization Manager:
       Plane: XY
       Plane Cell Count: 100
       Reference Frame: <Fixed Frame>
-      Value: true
+      Value: false
     - Class: rviz/Axes
       Enabled: true
       Length: 2
@@ -73,53 +72,6 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        chassis:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cog:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        front_center_lidar_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_front_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_rear_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_steering_hinge:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_front_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_rear_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_steering_hinge:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: fssim/vehicle
@@ -153,32 +105,13 @@ Visualization Manager:
           Value: true
         fssim_map:
           Value: true
-        map:
-          Value: true
       Marker Scale: 0.5
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        fssim_map:
-          fssim/vehicle/base_link:
-            fssim/vehicle/cog:
-              fssim/vehicle/chassis:
-                fssim/vehicle/front_center_lidar_link:
-                  {}
-                fssim/vehicle/left_rear_wheel:
-                  {}
-                fssim/vehicle/left_steering_hinge:
-                  fssim/vehicle/left_front_wheel:
-                    {}
-                fssim/vehicle/right_rear_wheel:
-                  {}
-                fssim/vehicle/right_steering_hinge:
-                  fssim/vehicle/right_front_wheel:
-                    {}
-          map:
-            {}
+        {}
       Update Interval: 0
       Value: true
     - Class: rviz/MarkerArray
@@ -423,13 +356,13 @@ Visualization Manager:
       Unreliable: false
       Value: false
     - Class: rviz/Marker
-      Enabled: false
+      Enabled: true
       Marker Topic: /trajset_vis
       Name: trajset
       Namespaces:
-        {}
+        "": true
       Queue Size: 100
-      Value: false
+      Value: true
     - Class: rviz/Marker
       Enabled: false
       Marker Topic: /lhpt_vis
@@ -447,21 +380,21 @@ Visualization Manager:
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
-      Enabled: false
+      Enabled: true
       Marker Topic: /state_text_marker
       Name: state_text
       Namespaces:
         {}
       Queue Size: 100
-      Value: false
+      Value: true
     - Alpha: 0.5
       Class: jsk_rviz_plugin/PolygonArray
       Color: 149; 149; 149
-      Enabled: true
+      Enabled: false
       Name: trajstar_poly
       Topic: /trajstar_polarr_vis
       Unreliable: false
-      Value: true
+      Value: false
       coloring: Flat color
       enable lighting: true
       normal length: 0.100000001
@@ -492,33 +425,33 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 28.3704185
+      Distance: 23.0939903
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 17.7489433
-        Y: -11.270834
-        Z: 0
+        X: 0.704416275
+        Y: -0.295932591
+        Z: 4.38690186e-05
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 1.56979632
+      Pitch: 1.05979681
       Target Frame: fssim/vehicle/base_link
       Value: ThirdPersonFollower (rviz)
-      Yaw: 4.71042871
+      Yaw: 3.14042306
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1016
+  Height: 2069
   Hide Left Dock: false
   Hide Right Dock: true
-  QMainWindow State: 000000ff00000000fd00000004000000000000025700000338fc0200000008fb0000001200530065006c0065006300740069006f006e0000000028000001c50000006f00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003a00000338000000f800fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c0000026100000001000001100000037afc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a0056006900650077007300000000280000037a000000db00fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000009aa00000052fc0100000002fb0000000800540069006d00650100000000000009aa000004e800fffffffb0000000800540069006d00650100000000000004500000000000000000000007490000033800000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000004000000000000025700000755fc0200000008fb0000001200530065006c0065006300740069006f006e0000000028000001c50000006f00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003a00000755000000f800fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c0000026100000001000001100000037afc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a0056006900650077007300000000280000037a000000db00fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e1000001970000000300000a8300000052fc0100000002fb0000000800540069006d0065010000000000000a83000004e800fffffffb0000000800540069006d00650100000000000004500000000000000000000008220000075500000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -527,6 +460,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: true
-  Width: 2474
+  Width: 2691
   X: 0
-  Y: 93
+  Y: 42
