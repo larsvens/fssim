@@ -180,7 +180,7 @@ class FssimManager:
             t.transform.translation.x = 0.0
             t.transform.translation.y = 0.0
             t.transform.rotation.w = 1.0
-            self.br.sendTransform(t)
+            #self.br.sendTransform(t)
 
         # Wait for short time
         rospy.sleep(5.0)

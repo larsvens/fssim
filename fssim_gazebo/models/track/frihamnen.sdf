@@ -1,0 +1,630 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sdf version="1.4">
+  <model name="frihamnen">
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>-0.5432871726713984 -2.2349136556052267 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>4.248745802837881 -3.4518209164652154 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>9.02880466060812 -4.775710745361436 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>13.804272798289958 -6.173759293117737 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>18.584019371129603 -7.613162525841643 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>22.417415241099288 -8.772375473194996 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>26.264861779153048 -9.920066471942299 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>30.131312727283174 -11.039080445599481 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>34.01235727521549 -12.112462220356184 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>37.892604812201235 -13.144798452846635 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>41.76621185952232 -14.15592890417336 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>46.59089450461043 -15.420389193925187 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>51.39058458989148 -16.72175853683495 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>56.18803293221498 -18.076102041179507 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>60.03422843557557 -19.176847765633028 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>63.89348176481294 -20.27254396946155 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>67.7586315352523 -21.345828206530427 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>71.61697088549597 -22.40378718082936 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>76.42283758050736 -23.731980462805957 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>81.12077194903678 -25.092811515410528 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>85.1928566926827 -26.802720953075706 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>88.35800695765886 -29.487885412788085 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>90.28292234254502 -33.07521921268108 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>90.68384334473231 -37.10718147752015 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>89.48924530589171 -41.01298295610039 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>86.94358862109208 -44.114162471692694 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>82.61161450181928 -45.98048294584363 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>78.41879838826233 -45.661157931824064 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>73.69460966740165 -44.314506739471966 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>69.85145476623768 -43.179513460369904 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>65.99488822648031 -42.05980918083693 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>62.13178406026447 -40.96815705774656 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>58.270569717120864 -39.897910179661345 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>53.45202615340344 -38.570824042886926 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>48.64636076332457 -37.23275599209865 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>43.84852642059587 -35.86952785410821 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>39.05771872658586 -34.48090428337198 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>34.27341490634112 -33.06734249928522 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>29.4878367937357 -31.633198254262563 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>25.653650798211174 -30.482313977740287 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>21.81126254237844 -29.33871735503837 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>17.958874586222223 -28.212118055615335 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>14.09659879005152 -27.10960972946531 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>10.22332674875759 -26.035951192248817 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>6.337960881705615 -24.99595246342386 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>2.4587915519967147 -23.9938542655112 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>-2.3112876173126677 -22.721445134620165 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>-6.949094165700657 -21.277855233670735 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>-11.3515351554658 -19.53204569630825 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>-15.047029773003853 -17.28104500743983 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>-17.61954967360206 -14.104611426520737 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>-18.80291105051288 -10.213600631932492 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>-18.38783021638824 -6.210301871947464 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>-15.845579696610356 -2.191634639369177 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>-11.649537033482384 0.060307743637704636 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>-6.841491811064538 -0.28897781412986845 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_blue</uri>
+      <pose>-2.0652975381125342 -1.7681560545797494 0 0 0 0</pose>
+      <name>cone_right</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>0.5432871726713988 2.2349136556052267 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>4.466971957118123 1.248445590676626 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>8.362234121181405 0.19305220504568243 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>12.232733651106846 -0.9135234940415256 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>16.082860124211404 -2.053825633452323 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>19.91746209496102 -3.2106711286596963 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>24.69659500090502 -4.6541544940492185 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>29.46917128427007 -6.064110974062552 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>34.24834221162249 -7.409740103095266 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>39.0586723772367 -8.695047175103992 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>43.894373370940606 -9.956771614292574 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>47.774301241003144 -10.975217825320785 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>51.657281424554235 -12.022969392059244 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>55.52506813707684 -13.104779860780496 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>59.37635990390658 -14.203716447664409 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>64.17533561069543 -15.572715777176834 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>68.97721745432332 -16.9101717322482 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>73.7998837149039 -18.232714092448738 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>77.66687979925582 -19.303396156509933 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>81.56742456405335 -20.418013893446783 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>85.64534017557484 -21.878170040891593 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>89.57725407589646 -24.25960143383734 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>92.7443374349718 -27.686491685447358 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>94.74078298030997 -31.940548099862056 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>95.3229416983494 -36.61808957332222 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>94.41547250994043 -41.223816517058815 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>92.14303409023054 -45.33839464334659 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>88.6173223945498 -48.55577132937667 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>84.18935542159223 -50.363114003527066 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>79.4503594886435 -50.528830260362206 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>75.26852486889383 -49.57701044090797 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>71.42997873834798 -48.44118587482028 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>66.64549010450708 -47.03525568601243 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>61.85723104793987 -45.66819675195643 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>57.04892658659499 -44.33272562809197 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>53.19173885025007 -43.270777221286195 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>49.32923893113088 -42.20102913506885 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>45.4691064959721 -41.11539269401214 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>41.61380066551696 -40.01329850733905 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>37.763323648444484 -38.89503402565226 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>33.91775262681263 -37.76092012981667 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>30.079961870908463 -36.61405788227274 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>25.292508143922813 -35.17616654285796 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>20.51066448702098 -33.75102340725193 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>15.72753313956622 -32.35619037357872 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>10.937019176248189 -31.00293463471494 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>6.137024874024766 -29.700334176164098 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>1.3091819757444005 -28.4478859023756 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-2.6008468427074143 -27.415880191352105 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-6.5297062239527 -26.26198775429854 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-10.442045249445668 -24.8991350632272 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-14.357608033543302 -23.179380848558836 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-18.158206109580984 -20.669345732393637 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-21.198980942116147 -17.0988549247453 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-23.016492622196328 -12.769831438592371 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-23.404037961663477 -8.07277706152891 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-22.260628623287786 -3.470311486988188 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-19.639503182160283 0.5154699458007335 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-15.838690058536653 3.3677906373479267 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-11.259610686823024 4.79250289146076 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-6.403514697172426 4.404303845151771 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_yellow</uri>
+      <pose>-1.6596924114890417 2.921778324626076 0 0 0 0</pose>
+      <name>cone_left</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_orange_big</uri>
+      <pose>5.511844726969635 2.7766108308110145 0 0 0 0</pose>
+      <name>cone_orange_big</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_orange_big</uri>
+      <pose>3.6221502133299874 -4.9970018843376005 0 0 0 0</pose>
+      <name>cone_orange_big</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_orange_big</uri>
+      <pose>8.038268859392934 2.1624601138781294 0 0 0 0</pose>
+      <name>cone_orange_big</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/cone_orange_big</uri>
+      <pose>6.148574345753287 -5.6111526012704855 0 0 0 0</pose>
+      <name>cone_orange_big</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/time_keeping</uri>
+      <pose>6.893162700283763 2.95538626704136 0 0 0 0</pose>
+      <name>tk_device_0</name>
+    </include>
+    <include>
+      <uri>model://fssim_gazebo/models/time_keeping</uri>
+      <pose>4.767256372439159 -5.789928037500831 0 0 0 0</pose>
+      <name>tk_device_1</name>
+    </include>
+  </model>
+</sdf>

@@ -238,8 +238,8 @@ void Vehicle::publishTf(const State &x) {
     q.setRPY(0.0, 0.0, x.yaw);
     transform.setRotation(q);
 
-    // Send TF
-    tf_br_.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "/fssim_map", "/fssim/vehicle/base_link"));
+    // Instead of sending TF from here, we send it from state est
+    // tf_br_.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "/tamp_map", "/fssim/vehicle/base_link"));
 }
 
 double Vehicle::getFx(const State &x, const Input &u) {
