@@ -157,6 +157,7 @@ class Vehicle {
 
     // States
     State state_;
+    State state_last_;
     Input input_;
     double time_last_cmd_;
 

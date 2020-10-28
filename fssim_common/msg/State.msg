@@ -6,3 +6,5 @@ float64 yaw
 float64 vx
 float64 vy
 float64 r
+float64 ax
+float64 ay

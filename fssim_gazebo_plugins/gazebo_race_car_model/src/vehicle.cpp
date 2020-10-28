@@ -151,13 +151,21 @@ void Vehicle::update(const double dt) {
     setModelState(state_);
     publishTf(state_);
 
-    // Overlay Noise on Velocities
+    // Create ROS msg
     auto state_pub = state_.toRos(ros::Time::now());
+
+    // Add acc (ground truth)
+    state_pub.ax = (state_.v_x-state_last_.v_x)/dt;
+    state_pub.ay = (state_.v_y-state_last_.v_y)/dt;
+    state_last_ = state_;
+
+    // Overlay Noise
     state_pub.vx += noise::getGaussianNoise(0.0, param_.sensors.noise_vx_sigma);
     state_pub.vy += noise::getGaussianNoise(0.0, param_.sensors.noise_vy_sigma);
     state_pub.r += noise::getGaussianNoise(0.0, param_.sensors.noise_r_sigma);
+    
+    // Publish 
     pub_ground_truth_.publish(state_pub);
-
     publishCarInfo(alphaF, alphaR, FyF, FyR, Fx);
 }
 
@@ -270,6 +278,11 @@ void Vehicle::onInitialPose(const geometry_msgs::PoseWithCovarianceStamped &msg)
     state_.y   = msg.pose.pose.position.y;
     state_.yaw = tf::getYaw(msg.pose.pose.orientation);
     state_.v_x = state_.v_y = state_.r = state_.a_x = state_.a_y = 0.0;
+
+    state_last_.x   = msg.pose.pose.position.x;
+    state_last_.y   = msg.pose.pose.position.y;
+    state_last_.yaw = tf::getYaw(msg.pose.pose.orientation);
+    state_last_.v_x = state_.v_y = state_.r = state_.a_x = state_.a_y = 0.0;
 }
 
 void Vehicle::onTireParams(const fssim_common::TireParamsConstPtr &msg) {
